@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-direction: column;
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 0;
+    width: 0;
+    border-radius: 0;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    align-items: top;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 10px 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.welcome-section {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome-section h1 {
+    font-size: 3em;
+}
+
+.welcome-section p {
+    font-size: 1.5em;
+}

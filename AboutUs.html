@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .main_menu {
+        background-color: grey;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+
+    .logo {
+        color: rgb(249, 4, 4);
+        font-size: 30px;
+    }
+
+    .logo span {
+        color: white;
+    }
+
+    .main_menu ul {
+        display: flex;
+        list-style: none;
+
+    }
+
+    .main_menu ul li {
+
+        padding: 20px;
+        position: relative;
+    }
+
+    .main_menu ul li a {
+        color: rgb(17, 16, 17);
+        text-decoration: none;
+    }
+
+    .main_menu ul li a:hover {
+        color: rgb(193, 194, 191);
+    }
+
+
+    .dropdown {
+        position: relative;
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: gray;
+        min-width: 160px;
+        box-shadow: 0px 8px 46px 0px #00000033;
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: gray;
+        color: white;
+        text-align: center;
+    }
+
+    #myvideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .p {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        text-align: start;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="main_menu">
+            <h1 class="logo"> <b>HSM</b> <span>Fitness</span></h1>
+            <ul>
+                <li><a href="p.html">Home</a></li>
+                <li><a href="AboutUs.html">AboutUs</a></li>
+                <div class="dropdown">
+                    <li><a>Services</a></li>
+                    <div class="dropdown-content">
+                        <li><a href="sub.html">Pricing</a></li>
+                    </div>
+                </div>
+                </li>
+                <li><a href="pc.html">ContactUs</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="AboutUs">
+        <h1>OUR STORY</h1>
+        <p class="p">Gold's Gym Has Been The Authority In Fitness Since 1965 Dating Back To The Original Gold's Gym In
+            Venice, California. It Was The Place For Serious Fitness. Opened Long Before The Modern-Day Health Club
+            Existed, The Original Gold's Gym Featured Homemade Equipment And A Dedication To Getting Results. It Was An
+            Instant Hit. Gold's Gym Quickly Became Known As “The Mecca Of Bodybuilding.<br>
+
+            In 1977, Gold's Gym Received International Attention When It Was Featured In The Movie Pumping Iron That
+            Starred Arnold Schwarzenegger And Lou Ferrigno. From That First Gym In Venice, Gold's Gym Has Become The
+            Largest Co-Ed Gym Chain In The World With Over 700+ Clubs In 27 Countries. Today, Gold's Gym Has Expanded
+            Its Fitness Profile To Offer All Of The Latest Equipment And Services, Including Group Exercise, Personal
+            Training, Cardiovascular Equipment, Spinning, And Yoga, While Maintaining Its Core Weight Lifting Tradition.<br>
+
+            Gold's Gym Has Become The Preferred Gym Of Celebrities, Athletes, Bodybuilders, The Military, And Fitness
+            Enthusiasts All Over The World. Most Importantly, Gold's Gym Continues To Change Lives By Helping People
+            Achieve Their Individual Potential.</p>
+    </div>
+
+    <div>
+        <video autoplay muted loop id="myVideo" style="width: 100%; max-height: fit-content;">
+            <source src="Gym WordPress Theme Homepage Background Video by Visualmodo.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="footer">
+        <p> &copy; Since 2001 Copy Rights. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

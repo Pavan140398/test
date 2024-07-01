@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        .contant {
+            max-width: 300px;
+            margin: auto;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 8px;
+            /* box-shadow: black; */
+            color: darkgray;
+            text-align: center;
+        }
+
+        footer {
+            align-items: center;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(h.jpg);
+            background-repeat: no-repeat;
+        }
+
+        .main_menu {
+            background-color: grey;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5px;
+        }
+
+        .logo {
+            color: rgb(249, 4, 4);
+            font-size: 30px;
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        .main_menu ul {
+            display: flex;
+            list-style: none;
+
+        }
+
+        .main_menu ul li {
+
+            padding: 20px;
+            position: relative;
+        }
+
+        .main_menu ul li a {
+            color: rgb(17, 16, 17);
+            text-decoration: none;
+        }
+
+        .main_menu ul li a:hover {
+            color: rgb(203, 204, 201);
+        }
+
+
+        .dropdown {
+            position: relative;
+            display: block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: gray;
+            min-width: 160px;
+            box-shadow: 0px 8px 46px 0px #00000033;
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+       
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(20, 20, 20, 0.979)
+}
+
+.price .header {
+  background-color: #0b0b0b;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+ 
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main_menu">
+            <h1 class="logo"> <b>HSM</b> <span>Fitness</span></h1>
+            <ul>
+                <li><a href="p.html">Home</a></li>
+                <li><a href="AboutUs.html">AboutUs</a></li>
+                <div class="dropdown">
+                    <li><a>Services</a></li>
+                    <div class="dropdown-content">
+                        <li><a href="sub.html">Pricing</a></li>
+                    </div>
+                </div>
+                </li>
+                <li><a href="pc.html">ContactUs</a></li>
+            </ul>
+        </div>
+    </header>
+    
+
+    <h2 style="text-align:center">Gym Pricing Sheet</h2>
+<!-- <p style="text-align:center">Resize the browser window to see the effect.</p> -->
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="grey"> 2000 / month</li>
+    <li class="grey">Trainer</li>
+    <li class="grey">Cardio</li>
+    <li class="grey">Classes</li>
+    <li class="grey">Body Building</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#04AA6D">Pro</li>
+    <li class="grey"> 10000 / Halfyearly</li>
+    <li class="grey">Trainer</li>
+    <li class="grey">Cardio</li>
+    <li class="grey">Body Building</li>
+    <li class="grey">Classes</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="grey"> 19000 / yearly</li>
+    <li class="grey">Trainer</li>
+    <li class="grey">Cardio</li>
+    <li class="grey">Classes</li>
+    <li class="grey">Body <i class="fa fa-building" aria-hidden="true"></i></li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+    <div class="footer">
+        <p> &copy; Since 2001 Copy Rights. All rights reserved.</p>
+    </div>
+
+
+</body>
+
+</html>
